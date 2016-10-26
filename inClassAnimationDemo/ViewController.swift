@@ -32,16 +32,33 @@ class ViewController: UIViewController {
         //                    self.pigImageView.transform = CGAffineTransform(rotationAngle: CGFloat(45 * M_PI/180))
         //                }, completion: nil)
         
+        //
+        //        UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+        //            self.pigImageView.center.y += 150
+        //        }) { (Bool) in
+        //            UIView.animate(withDuration: 0.4, delay: 0, options: [UIViewAnimationOptions.autoreverse, UIViewAnimationOptions.repeat], animations: {
+        //                self.pigImageView.transform = CGAffineTransform(rotationAngle: CGFloat(45 * M_PI/180))
+        //                }, completion: nil)
+        //        }
         
-        UIView.animate(withDuration: 0.3, delay: 0, options: [], animations: {
-            self.pigImageView.center.y += 150
-        }) { (Bool) in
-            UIView.animate(withDuration: 0.4, delay: 0, options: [UIViewAnimationOptions.autoreverse, UIViewAnimationOptions.repeat], animations: {
-                self.pigImageView.transform = CGAffineTransform(rotationAngle: CGFloat(45 * M_PI/180))
-                }, completion: nil)
+        
+        UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: [], animations: {
+            self.pigImageView.transform = self.pigImageView.transform.translatedBy(x: 0, y: -50)
+            }) { (Bool) in
+                
         }
         
+        
         // end didTapAnimatePigButton
+    }
+    
+    @IBAction func didPressMoveDown(_ sender: AnyObject) {
+        
+        UIImageView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: [], animations: {
+            self.pigImageView.transform = self.pigImageView.transform.translatedBy(x: 0, y: 50)
+            }) { (Bool) in
+                
+        }
     }
     
 }

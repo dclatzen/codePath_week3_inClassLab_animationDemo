@@ -23,11 +23,19 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uid-Xl-daM">
-                                <frame key="frameInset" minX="137" minY="357" width="82" height="30"/>
+                                <frame key="frameInset" minX="148" minY="357" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Animate Pig"/>
+                                <state key="normal" title="Move Up"/>
                                 <connections>
                                     <action selector="didTapAnimatePigButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="due-zm-wQp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNT-xP-w6c">
+                                <frame key="frameInset" minX="138" minY="445" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Move Down"/>
+                                <connections>
+                                    <action selector="didPressMoveDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d1b-At-A2t"/>
                                 </connections>
                             </button>
                         </subviews>
